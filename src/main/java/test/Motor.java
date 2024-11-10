@@ -5,10 +5,6 @@ public class Motor {
     String tipo;
     int registro;
 
-    public int getRegistro() {
-        return registro;
-    }
-
     public void cambiarRegistro(int nuevoRegistro) {
         this.registro = nuevoRegistro;
     }

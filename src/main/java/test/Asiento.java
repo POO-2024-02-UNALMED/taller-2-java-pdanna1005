@@ -13,8 +13,4 @@ public class Asiento {
             }
         }
     }
-
-    public int getRegistro() {
-        return registro;
-    }
 }
