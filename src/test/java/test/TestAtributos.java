@@ -6,34 +6,38 @@ import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
 
+import Asiento;
+import Auto;
+import Motor;
+
 @TestMethodOrder(MethodOrderer.Alphanumeric.class)
 public class TestAtributos {
-	
+
 	@Test
-   	public void testAtributosMotor(){
-		
+	public void testAtributosMotor() {
+
 		Motor m = new Motor();
 		m.numeroCilindros = 4;
 		m.registro = 142;
 		m.tipo = "electrico";
-		
+
 		assertTrue(true, "Hay un problema con los atributos de la Clase Motor");
-    }
-	
+	}
+
 	@Test
-   	public void testAtributosAsiento(){
-		
+	public void testAtributosAsiento() {
+
 		Asiento a = new Asiento();
 		a.color = "blanco";
 		a.precio = 5000;
 		a.registro = 435;
-		
+
 		assertTrue(true, "Hay un problema con los atributos de la Clase Asiento");
-    }
-	
+	}
+
 	@Test
-   	public void testAtributosAuto(){
-		
+	public void testAtributosAuto() {
+
 		Auto v = new Auto();
 		v.asientos = new Asiento[5];
 		v.marca = "tesla";
@@ -41,8 +45,8 @@ public class TestAtributos {
 		v.motor = new Motor();
 		v.precio = 33000;
 		v.registro = 341;
-		
+
 		assertTrue(true, "Hay un problema con los atributos de la Clase Auto");
-    }
+	}
 
 }
